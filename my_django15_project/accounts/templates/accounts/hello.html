@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('/static/rush.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+}
+
+.topleft {
+  position: absolute;
+  background: : #000;
+  display: block;
+  text-decoration: underline;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  background: #000;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: block;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <h2>OUTPUT</h2>
+
+
+  </div>
+  <div class="middle">
+    <pre >{{mdata}}</pre>
+    <hr>
+    <p></p>
+  </div>
+  <div class="bottomleft">
+    <h2>WORKING CODE SPEAKS LOUDER THAN WORDS</h2>
+    <p>THANKS FOR VISITING</p>
+  </div>
+</div>
+
+</body>
+</html>
